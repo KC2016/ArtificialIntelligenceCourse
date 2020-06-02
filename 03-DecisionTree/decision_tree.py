@@ -17,7 +17,7 @@ import itertools # NEW, was missing
 import urllib.request
     
 filename = 'dataset_einstein.csv'
-relativPath = '03-DecisionTree/data'
+relativPath = 'data'
 
 url = 'https://raw.githubusercontent.com/diogocortiz/Crash-Course-IA/master/ArvoreDecis%C3%A3o/' + filename
 urllib.request.urlretrieve(url, relativPath+'/'+filename)
@@ -45,13 +45,13 @@ print('Total of recorded patients with negative results: ', df[df['SARS-Cov-2 ex
 print('Total of recorded patients with positive results: ', df[df['SARS-Cov-2 exam result'] =='positive'].shape[0])
 
 # IMPLEMENTATION
-'''We need to convert the Dataframe to an Numpy Array, which is the type of data 
+print('''We need to convert the Dataframe to an Numpy Array, which is the type of data
 that we will use in the training. 
 We will also already separate the Dataset in two. 
 One with input features, and one with labels (tags, record labels).
 
 In this case, we are trying to make a classifier for the Covid test, in this case, 
-we want to train our model with the tag present in the field 'SARS-Cov-2 exam result'''
+we want to train our model with the tag present in the field 'SARS-Cov-2 exam result''')
 
 # create the stickers for Y
 Y = df['SARS-Cov-2 exam result'].values 
@@ -66,13 +66,13 @@ print(X)
 # divide our Dataset in two: one for training (80% of data) and another for testing (20% of data)
 X_treino, X_teste, Y_treino, Y_teste = train_test_split(X, Y, test_size=0.2, random_state=3)
 
-'''Now let's create and train our model. 
+print('''Now let's create and train our model.
 Remember the difference between algortimo and model? 
 There is the training algorithm (which in this case is the decision tree) that 
-will export a trained model (which is also an algorithm).'''
+will export a trained model (which is also an algorithm).''')
 
-'''now on my_tree i have associated with her the training algorithm,
-basically the recipe we see in the theory.'''
+print('''now on my_tree i have associated with her the training algorithm,
+basically the recipe we see in the theory.''')
 
 #create an algorithm that will be of the type of decision tree
 algortimo_arvore = tree.DecisionTreeClassifier(criterion='entropy', max_depth=5) 
@@ -81,9 +81,9 @@ algortimo_arvore = tree.DecisionTreeClassifier(criterion='entropy', max_depth=5)
 # train the model
 modelo = algortimo_arvore.fit(X_treino, Y_treino)   # model in whitebox
 
-''' The decision tree can be considered a White Box model, that is, 
+print(''' The decision tree can be considered a White Box model, that is,
 a model that we can better understand what he learned and how he decides. 
-We can show the tree for that.'''
+We can show the tree for that.''')
 
 # show the most important feature (white box?)
 print(modelo.feature_importances_)
@@ -92,9 +92,9 @@ nome_features = ['Hemoglobin', 'Leukocytes', 'Basophils','Proteina C reativa mg/
 nome_classes = modelo.classes_
 
 # VISUALIZATION
-# from sklearn.externals.six import StringIO 
-# from IPython.display import Image
-# import pydotplus as pydot
+from sklearn.externals.six import StringIO 
+from IPython.display import Image
+import pydotplus as pydot
 
 # assemble the tree image
 dot_data = StringIO()
@@ -102,14 +102,14 @@ dot_data = StringIO()
 export_graphviz(modelo, out_file=dot_data, filled=True, feature_names=nome_features, class_names=nome_classes, rounded=True, special_characters=True)
 graph = pydot.graph_from_dot_data(dot_data.getvalue())  
 Image(graph.create_png())
-# graph.write_png(relativPath+'/'+'arvore.png')
-# Image(relativPath+'/'+'arvore.png')   # it should show the image
+graph.write_png(relativPath+'/'+'arvore.png')
+Image(relativPath+'/'+'arvore.png')   # it should show the image
 
 # alternatively
 from subprocess import call
 call(['open', relativPath+'/'+'arvore.png'])
 
-'''And we can also understand which features are most important for the trained model'''
+print('''And we can also understand which features are most important for the trained model''')
 
 importances = modelo.feature_importances_
 indices = np.argsort(importances)[::-1]
@@ -128,13 +128,15 @@ plt.ylabel("importance", fontsize = 18)
 plt.xlabel("index of the feature", fontsize = 18)
 # plt.show()
 
+print('''
 #Indice das features
 # 0 - 'Hemoglobin', 
 # 1 - 'Leukocytes'
 # 2 - 'Basophils',
 # 3 - 'Proteina C reativa mg/dL']
+''')
 
-'''We will test the model by making predictions in the test dataset.'''
+print('''We will test the model by making predictions in the test dataset.''')
 
 # applying the model to the test base and storing the result in y_predicoes
 Y_predicoes = modelo.predict (X_teste)
@@ -144,15 +146,16 @@ Y_predicoes = modelo.predict (X_teste)
 print("TREE ACCURACY:", accuracy_score(Y_teste, Y_predicoes))
 print(classification_report (Y_teste, Y_predicoes))
 
-# accuracy: of the ratings the model made for a certain class, how many effectively were correct?
-# recall: of the possible datapoints belonging to a certain class, how many the model was the classified correctly?
+print('''accuracy: of the ratings the model made for a certain class, how many effectively were correct?
+recall: of the possible datapoints belonging to a certain class, how many the model was the classified 
+correctly?''')
 
-'''Let's understand the Confusion Matrix'''
+print('''Let's understand the Confusion Matrix''')
 
-'''This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.'''
+print('''This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.''')
 
-'''A rercall of positives in 0.25 é too low. There are many false positives in the model.'''
+print('''A rercall of positives in 0.25 é too low. There are many false positives in the model.''')
 
 def plot_confusion_matrix(cm, classes,        
                           normalize=False,

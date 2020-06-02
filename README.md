@@ -1,11 +1,10 @@
 <p align="center">
 <img src = "images/IAparaTodos.png"  width=600>  <br/> 
+<p>
 
 # Artificial Intenligence
 Based on the IA course of the professor Diogo Cortiz (in Portuguese) <br/> 
 [Videos at Youtube](https://www.youtube.com/channel/UC5MXrSUoLW0JRd2j7q1ef7Q)
-<p>
-
 
 # Table of Contents
 ## Lessons
@@ -21,8 +20,9 @@ Based on the IA course of the professor Diogo Cortiz (in Portuguese) <br/>
 
 
 ### Other sources used
-[Download files with Python](https://stackabuse.com/download-files-with-python/)<br/> 
-[The Hitchhiker's Guide to Machine Learning in Python](https://www.linkedin.com/pulse/hitchhikers-guide-machine-learning-python-conor-dewey/) <br/> 
-[Plot a Confusion Matrix](https://www.kaggle.com/grfiv4/plot-a-confusion-matrix)<br/> 
-[Logistic Regression using Python (scikit-learn)](https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a)<BR/>
-[Anscombe's_quartet](https://en.wikipedia.org/wiki/Anscombe's_quartet)<BR/>
+- [Download files with Python](https://stackabuse.com/download-files-with-python/)<br/> 
+- [The Hitchhiker's Guide to Machine Learning in Python](https://www.linkedin.com/pulse/hitchhikers-guide-machine-learning-python-conor-dewey/) <br/> 
+- [Plot a Confusion Matrix](https://www.kaggle.com/grfiv4/plot-a-confusion-matrix)<br/> 
+- [Logistic Regression using Python (scikit-learn)](https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a)<BR/>
+- [Anscombe's_quartet](https://en.wikipedia.org/wiki/Anscombe's_quartet)<BR/>
+- Intro to Machine Learning, Women Who Code (material from the couse)

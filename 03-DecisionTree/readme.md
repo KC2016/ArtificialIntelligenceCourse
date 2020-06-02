@@ -48,3 +48,9 @@ Analysis of a dataset on COVID-19 from the Hospital Israelita Albert Einstein, B
 About SARS-CoV-2 for almost 6000 patients.<BR/>
 The dataset was redcucted to learning, removing the less important variables.<BR/>
 
+## Other definitions
+linear regression is a supervised learning algorithm that predicts an outcome based on continuous features. Linear regression is versatile in the sense that it has the ability to be run on a single variable (simple linear regression) or on many features (multiple linear regression). The way it works is by assigning optimal weights to the variables in order to create a line (ax + b) that will be used to predict output. Check out the video below for a more thorough explanation.
+[source](https://www.linkedin.com/pulse/hitchhikers-guide-machine-learning-python-conor-dewey/)
+
+
+

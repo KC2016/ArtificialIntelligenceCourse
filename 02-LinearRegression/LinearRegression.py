@@ -20,7 +20,7 @@ from math import sqrt
 import urllib.request
     
 filename = 'FuelConsumptionCo2.csv'
-relativPath = '02-LinearRegression/data'
+relativPath = 'data'
 
 url = 'https://raw.githubusercontent.com/diogocortiz/Crash-Course-IA/master/RegressaoLinear/' + filename
 urllib.request.urlretrieve(url, relativPath+'/'+filename)
