@@ -12,7 +12,7 @@ Based on the IA course of the professor Diogo Cortiz (in Portuguese) <br/>
 2. [Linear Regression](02-LinearRegression): ficticious datasets
 3. [Decision Tree](03-DecisionTree): AI-covid19-AlbertEinstein
 4. [Derivatives](04-Derivates)
-5. [Descending gradient](05-DescendingGradient)
+5. [GradientDescendent](05-GradientDescendent)
 
 
 ## Install the requirements
