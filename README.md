@@ -25,4 +25,3 @@ Based on the IA course of the professor Diogo Cortiz (in Portuguese) <br/>
 - [Plot a Confusion Matrix](https://www.kaggle.com/grfiv4/plot-a-confusion-matrix)<br/> 
 - [Logistic Regression using Python (scikit-learn)](https://towardsdatascience.com/logistic-regression-using-python-sklearn-numpy-mnist-handwriting-recognition-matplotlib-a6b31e2b166a)<BR/>
 - [Anscombe's_quartet](https://en.wikipedia.org/wiki/Anscombe's_quartet)<BR/>
-- Intro to Machine Learning, Women Who Code (material from the couse)
