@@ -8,7 +8,7 @@ Theoretical class<BR/>
 
 Theorical class about Gradient Descending.<BR/>
 Gradient Descending: numeric method for optimization, whice find the minimum of a function.<BR/>
-ˆy=mx+b
+ˆy=mx+b<BR/>
 ˆy is the prediction of y<BR/>
 m is the inclination<BR/>
 b is the intersept<BR/>
