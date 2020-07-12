@@ -1,9 +1,17 @@
-<img align="right"  height="100" src="images/lesson3.png">
+<img align="right"  height="100" src="../images/lesson03.png">
 
 # Decision Tree - Artificial Intelligence Course
 3rd lesson of the Artificial Intelligence Crash Course for all<BR/>
 By Diogo Cortiz (TIDD/PUC-SP)<BR/>
+
+Theoretical class<BR/>
+
+The video shows how to calculate partial derivatives, power rule and chain rule.<BR/> 
+These are the fundamentals necessary to understand the next class of the course, on Gradient Descending.<BR/>
+
+
 [Video at YouTube](https://www.youtube.com/watch?v=ecYpXd4WREk&t=3376s) <BR/>
+
 
 ## Theory
 Entropy is the measurement of uncentainty:
