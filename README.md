@@ -13,7 +13,9 @@ Based on the IA course of the professor Diogo Cortiz (in Portuguese) <br/>
 3. [Decision Tree](03-DecisionTree): AI-covid19-AlbertEinstein
 4. [Derivatives](04-Derivates)
 5. [GradientDescendent](05-GradientDescendent)
-
+6. [EntropyAndCrossEntropy](06-EntropyAndCrossEntropy)
+7. [LogisticRegression](07-LogisticRegression)
+8. [SoftmaxRegression](08-SoftmaxRegression)
 
 ## Install the requirements
 `pip install -r /path/to/requirements.txt`
