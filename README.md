@@ -16,6 +16,8 @@ Based on the IA course of the professor Diogo Cortiz (in Portuguese) <br/>
 6. [EntropyAndCrossEntropy](06-EntropyAndCrossEntropy)
 7. [LogisticRegression](07-LogisticRegression)
 8. [SoftmaxRegression](08-SoftmaxRegression)
+9. [NeuralNetworks](09-NeuralNetworks)
+10. [NeuralNetworks-MultilayerPerceptron](10-NeuralNetworks-MultilayerPerceptron)
 
 ## Install the requirements
 `pip install -r /path/to/requirements.txt`
